@@ -1,8 +1,12 @@
-# מעתיק שמועה - Maatik Shemua
 ![Static Badge](https://img.shields.io/badge/build-passing%20provisional%20tests-green) 
 ![Static Badge](https://img.shields.io/badge/under%20development-8A2BE2)
 
+> ### 📝 **Maatik Shemua**
+> *Meaning:* Literally 'transmitter(s) of the oral word', _maatikei ha-shemu'a_ is an ancient description of the Rabbis of old. Focused on transmission of tradition as well, this project aims to transmit their heritage from handwriting to text. 
+
+
 A HTR (Handwritten Text Recognition) tool designed for easy Hebrew manuscript transcription. When complete, it will featuring full RTL support (using Kraken's engine), paleographic markup conventions, and version history. Inspired by eScriptorium.
+
 ![Screenshot of Maatik Shemua at work](assets/MaatikShemua.jpeg)
 
 
