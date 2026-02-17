@@ -3,6 +3,8 @@
 ![Static Badge](https://img.shields.io/badge/under%20development-8A2BE2)
 
 A HTR (Handwritten Text Recognition) tool designed for easy Hebrew manuscript transcription. When complete, it will featuring full RTL support (using Kraken's engine), paleographic markup conventions, and version history. Inspired by eScriptorium.
+![Screenshot of Maatik Shemua at work](assets/MaatikShemua.jpeg)
+
 
 ## Features
 
