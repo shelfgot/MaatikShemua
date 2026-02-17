@@ -1,6 +1,8 @@
 # מעתיק שמועה - Maatik Shemua
+![Static Badge](https://img.shields.io/badge/build-passing%20provisional%20tests-green) 
+![Static Badge](https://img.shields.io/badge/under%20development-8A2BE2)
 
-An HTR (Handwritten Text Recognition) tool designed for easy Hebrew manuscript transcription. When complete, it will featuring full RTL support (using Kraken's engine), paleographic markup conventions, and version history. Inspired by 
+A HTR (Handwritten Text Recognition) tool designed for easy Hebrew manuscript transcription. When complete, it will featuring full RTL support (using Kraken's engine), paleographic markup conventions, and version history. Inspired by eScriptorium.
 
 ## Features
 
