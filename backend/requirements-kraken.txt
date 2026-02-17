@@ -1,0 +1,16 @@
+# Optional kraken / HTR requirements
+#
+# These are only needed if you want to run the full
+# OCR/HTR pipeline locally. They currently target
+# Python versions up to 3.11 and are NOT required
+# for running the FastAPI app, database, or tests.
+#
+# Install on a compatible Python (e.g. 3.11) or in
+# a container:
+#   pip install -r requirements.txt
+#   pip install -r requirements-kraken.txt
+#
+# Then configure kraken-related settings as needed.
+
+kraken>=5.2.0
+

@@ -1,0 +1,24 @@
+# Lightweight version without Redis/Celery for simple use cases
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+    environment:
+      - DATABASE_URL=sqlite:///./data/maatik.db
+      - USE_BACKGROUND_TASKS=true
+      - AUTH_ENABLED=false
+      - ALLOWED_MODEL_DIRS=/app/models,/app/data/models
+      - LOG_LEVEL=INFO
+      - LOG_FORMAT=json
+      
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

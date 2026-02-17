@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hebrew font - automatically applies RTL direction */
+.font-hebrew {
+  font-family: 'SBL Hebrew', 'Ezra SIL', 'Frank Ruehl', 'Noto Sans Hebrew', serif;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Confidence indicators */
+.confidence-high {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.confidence-medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.confidence-low {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Page tile */
+.page-tile {
+  @apply relative rounded-lg border border-gray-200 cursor-pointer;
+  @apply hover:border-blue-500 hover:shadow-md transition-all;
+}
+
+.page-tile:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Transcription editor */
+.transcription-line {
+  @apply flex items-center gap-2 border-b border-gray-100;
+  @apply px-2;
+}
+
+/* Input field for transcription - single line with horizontal scroll */
+.transcription-input {
+  @apply flex-1 border-0 bg-transparent p-1;
+  @apply focus:outline-none focus:bg-blue-50;
+  direction: rtl;
+  text-align: right;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* Split pane */
+.Resizer {
+  @apply bg-gray-300 cursor-col-resize;
+  width: 5px;
+}
+
+.Resizer:hover {
+  @apply bg-blue-400;
+}
+
+/* OpenSeadragon container */
+.osd-container {
+  @apply w-full h-full bg-gray-100;
+}
+
+/* Line overlay */
+.line-overlay {
+  stroke: rgba(59, 130, 246, 0.7);
+  stroke-width: 2;
+  fill: rgba(59, 130, 246, 0.1);
+}
+
+.line-overlay.active {
+  stroke: rgba(239, 68, 68, 0.9);
+  fill: rgba(239, 68, 68, 0.2);
+}
+
+/* Badge */
+.badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+}
+
+.badge-blue {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.badge-green {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-gold {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+/* Paleographic toolbar */
+.paleo-toolbar {
+  @apply flex gap-1 p-2 bg-gray-50 border-b;
+}
+
+.paleo-btn {
+  @apply px-3 py-1 text-sm rounded border border-gray-300;
+  @apply hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Progress bar */
+.progress-bar {
+  @apply w-full bg-gray-200 rounded-full h-2.5;
+}
+
+.progress-bar-fill {
+  @apply bg-blue-600 h-2.5 rounded-full transition-all;
+}
+
+/* Document toolbar button hierarchy */
+.btn-primary {
+  @apply px-3 py-1.5 text-sm font-medium rounded-lg bg-blue-600 text-white;
+  @apply hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white;
+  @apply hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-destructive {
+  @apply px-3 py-1.5 text-sm rounded-lg border border-red-300 text-red-700 bg-white;
+  @apply hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-ghost {
+  @apply px-2 py-1 text-sm rounded-md text-gray-600;
+  @apply hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1;
+}
+
+.select-toolbar {
+  @apply px-3 py-1.5 text-sm border border-gray-300 rounded-lg bg-white hover:bg-gray-50;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
