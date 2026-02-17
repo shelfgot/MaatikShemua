@@ -1,7 +1,8 @@
 ![Static Badge](https://img.shields.io/badge/build-passing%20provisional%20tests-green) 
 ![Static Badge](https://img.shields.io/badge/under%20development-8A2BE2)
 
-> ### 📝 **Maatik Shemua**
+### 📝 **Maatik Shemua**
+> *Hebrew*: מעתיק שמועה
 > *Meaning:* Literally 'transmitter(s) of the oral word', _maatikei ha-shemu'a_ is an ancient description of the Rabbis of old. Focused on transmission of tradition as well, this project aims to transmit their heritage from handwriting to text. 
 
 
